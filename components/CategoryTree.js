@@ -15,6 +15,9 @@ const CategoryTree = () => {
           {category?.children?.map((child) => (
             <CategoryBranch key={child._id} category={child} level={0} />
           ))}
+          <p className="text-center text-gray-500 py-8">
+            Powered by <b>tectify</b>
+          </p>
         </div>
       ) : (
         <div className="flex w-full h-[400px]">
