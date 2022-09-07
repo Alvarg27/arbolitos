@@ -3,11 +3,15 @@ import ProductCard from "./ProductCard";
 
 const CategoryProducts = ({ products }) => {
   return (
-    <div>
-      {products.map((p) => (
-        <ProductCard key={p._id} product={p} />
-      ))}
-    </div>
+    <>
+      {products?.length >= 1 && (
+        <div>
+          {products.map((p) => (
+            <ProductCard key={p._id} product={p} />
+          ))}
+        </div>
+      )}
+    </>
   );
 };
 

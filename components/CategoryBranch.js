@@ -5,24 +5,26 @@ const CategoryBranch = ({ category, level }) => {
   const hasChildren = category.children && category.children.length !== 0;
 
   const renderBranches = () => {
-    if (category.children.length >= 1) {
-      return;
+    if (hasChildren) {
+      const newLevel = level + 1;
+      return category.children.map((child) => {
+        console.log(child);
+        return (
+          <CategoryBranch key={child._id} category={child} level={newLevel} />
+        );
+      });
     }
-    const newLevel = level + 1;
-    return category.children.map((child) => {
-      return (
-        <CategoryBranch key={child._id} category={child} level={newLevel} />
-      );
-    });
+    return null;
   };
-
   return (
     <>
       <CategoryNodeCard
         category={category}
         hasChildren={hasChildren}
         level={level}
-      />
+      >
+        {hasChildren && <div className="mb-8"> {renderBranches()}</div>}
+      </CategoryNodeCard>
     </>
   );
 };
