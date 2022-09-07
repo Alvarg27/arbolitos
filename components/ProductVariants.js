@@ -3,7 +3,7 @@ import ProductVariantCard from "./ProductVariantCard";
 
 const ProductVariants = ({ variants }) => {
   return (
-    <div>
+    <div className="mt-4">
       {variants.map((variant) => (
         <ProductVariantCard key={variant._id} variant={variant} />
       ))}

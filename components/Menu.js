@@ -52,6 +52,9 @@ const Menu = () => {
       <div className="max-w-[600px] mx-auto flex">
         {categories.length >= 1 && <CategoryTree />}
       </div>
+      <p className="text-center text-gray-500 py-8">
+        Powered by <b>tectify</b>
+      </p>
     </div>
   );
 };
