@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "https://api.restaurant.tectify.io";
+const BASE_URL = "https://api.restaurant.tectify.io/restaurant";
 
 export default axios.create({
   baseURL: BASE_URL,
