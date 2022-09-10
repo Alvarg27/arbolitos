@@ -66,13 +66,11 @@ const Hero = () => {
             onClick={() => handleVideoPress()}
             poster="/poster.webp"
             className="m-auto cursor-pointer w-full h-full object-cover"
-            playsInline={true}
+            playsInline
             loop
             muted
             ref={videoRef}
-            onLoadStart={() => setVideoLoading(true)}
-            onLoadedData={() => setVideoLoading(false)}
-            preload={true}
+            onLoadedData={() => Alert.alert("LOADING")}
           >
             <source src="/arbolitos.mp4" />
           </video>
