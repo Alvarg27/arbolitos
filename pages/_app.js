@@ -1,14 +1,12 @@
-import { CategoriesProvider } from "../context/CategoriesProvider";
-import { LanguageProvider } from "../context/LanguageProvider";
+import { useEffect } from "react";
+import Layout from "../components/Layout";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <LanguageProvider>
-      <CategoriesProvider>
-        <Component {...pageProps} />
-      </CategoriesProvider>
-    </LanguageProvider>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   );
 }
 
