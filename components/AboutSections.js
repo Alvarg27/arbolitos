@@ -10,7 +10,7 @@ const AboutSections = () => {
 
       <div className="flex flex-col  lg:flex-row-reverse mt-8">
         <div className="lg:w-1/2 my-4">
-          <div className="w-[400px] mx-auto">
+          <div className="max-w-[400px] mx-auto">
             <Image
               src="/pulpo.webp"
               layout="responsive"
