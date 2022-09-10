@@ -24,8 +24,16 @@ const Hero = () => {
       pauseVideo();
     }
   };
-
-  console.log(videoLoading);
+  useEffect(() => {
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      return;
+    }
+    startVideo();
+  }, []);
   return (
     <div className="w-full">
       <div className="mt-[50px]">
@@ -70,7 +78,6 @@ const Hero = () => {
             loop
             muted
             ref={videoRef}
-            onLoadedData={() => Alert.alert("LOADING")}
           >
             <source src="/arbolitos.mp4" />
           </video>
