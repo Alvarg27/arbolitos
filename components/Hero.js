@@ -4,6 +4,7 @@ import { FaPlay } from "react-icons/fa";
 
 const Hero = () => {
   const [playing, setPlaying] = useState(false);
+  const [videoLoading, setVideoLoading] = useState(false);
   const videoRef = useRef(null);
 
   const startVideo = () => {
@@ -40,15 +41,30 @@ const Hero = () => {
               <FaPlay className="m-auto text-6xl text-white opacity-50" />
             </div>
           </Transition>
-
+          <Transition
+            show={videoLoading}
+            enter="transition-opacity duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="transition-opacity duration-300"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="absolute w-full h-full flex bg-black bg-opacity-30">
+              Loading
+            </div>
+          </Transition>
           <video
             onClick={() => handleVideoPress()}
             poster="/poster.webp"
             className="m-auto cursor-pointer w-full h-full object-cover"
-            playsInline
+            playsInline={true}
             loop
             muted
             ref={videoRef}
+            onLoadStart={() => setVideoLoading(true)}
+            onLoadedData={() => setVideoLoading(false)}
+            preload={true}
           >
             <source src="/arbolitos.mp4" />
           </video>
