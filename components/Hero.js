@@ -29,7 +29,9 @@ const Hero = () => {
     <div className="w-full">
       <div className="mt-[50px]">
         <video
-          className="max-w-[800px] m-auto"
+          onClick={() => handleVideoPress()}
+          poster="/poster.webp"
+          className="max-w-[800px] m-auto cursor-pointer"
           playsInline
           loop
           muted
