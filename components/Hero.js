@@ -23,10 +23,6 @@ const Hero = () => {
     }
   };
 
-  useEffect(() => {
-    startVideo();
-  }, []);
-
   return (
     <div className="w-full">
       <div className="mt-[50px]">
