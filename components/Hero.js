@@ -37,21 +37,11 @@ const Hero = () => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="absolute w-full h-full flex bg-black bg-opacity-30">
+            <div
+              onClick={() => handleVideoPress()}
+              className="absolute w-full h-full flex bg-black bg-opacity-30"
+            >
               <FaPlay className="m-auto text-6xl text-white opacity-50" />
-            </div>
-          </Transition>
-          <Transition
-            show={videoLoading}
-            enter="transition-opacity duration-300"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="transition-opacity duration-300"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <div className="absolute w-full h-full flex bg-black bg-opacity-30">
-              Loading
             </div>
           </Transition>
           <video
