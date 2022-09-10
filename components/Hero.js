@@ -1,6 +1,7 @@
 import { Transition } from "@headlessui/react";
 import React, { useState, useRef, useEffect } from "react";
 import { FaPlay } from "react-icons/fa";
+import Spinner from "./Spinner";
 
 const Hero = () => {
   const [playing, setPlaying] = useState(false);
@@ -42,6 +43,22 @@ const Hero = () => {
               className="absolute w-full h-full flex bg-black bg-opacity-30"
             >
               <FaPlay className="m-auto text-6xl text-white opacity-50" />
+            </div>
+          </Transition>
+          <Transition
+            show={videoLoading && playing}
+            enter="transition-opacity duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="transition-opacity duration-300"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div
+              onClick={() => handleVideoPress()}
+              className="absolute w-full h-full flex bg-black bg-opacity-30"
+            >
+              <Spinner />
             </div>
           </Transition>
           <video
