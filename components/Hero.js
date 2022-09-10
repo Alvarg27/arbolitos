@@ -25,6 +25,7 @@ const Hero = () => {
     }
   };
 
+  console.log(videoLoading);
   return (
     <div className="w-full">
       <div className="mt-[50px]">
