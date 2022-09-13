@@ -10,7 +10,7 @@ const ContactSection = () => {
         <Image layout="fill" src={background} objectFit="cover" />
       </div>
       <div className="bg-black w-full h-full absolute bg-opacity-50" />
-      <div className="flex">
+      <div className="flex flex-col lg:flex-row ">
         <div className="lg:w-1/2 flex relative">
           <p className="font-serif text-2xl m-auto text-white">Contacto</p>
         </div>
