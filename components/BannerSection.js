@@ -32,7 +32,7 @@ const BannerSection = () => {
     >
       <div className=" text-white m-auto z-[15]">
         <p className="font-serif text-4xl">Conoce nuestro menú</p>
-        <Link href="https://g.page/losarbolitosrestaurante?share">
+        <Link href="https://los-arbolitos.tectify.app/">
           <a target="_blank">
             <Button className="bg-white mx-auto mt-8 px-8 text-black ">
               Ver menú
