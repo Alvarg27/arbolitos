@@ -11,12 +11,12 @@ const HeroSection = () => {
   const { offsetY } = usePageOffset();
 
   return (
-    <div className="relative flex flex-col pt-[100px] mb-20 lg:pt-0 lg:flex-row lg:max-h-screen overflow-clip">
+    <div className="relative flex flex-col pt-[150px] mb-20 lg:pt-0 lg:flex-row lg:max-h-screen overflow-x-hidden">
       <div
         style={{ transform: `translateY(-${offsetY}px)` }}
         className=" my-auto px-8 drop-shadow-lg text-center lg:w-1/2"
       >
-        <h2 className="text-white text-medium text-6xl relative z-[0] font-serif">
+        <h2 className="text-white text-medium text-4xl lg:text-6xl relative z-[0] font-serif">
           Prueba la gastronomía mexicana
         </h2>
         <Link href="https://www.opentable.com.mx/r/los-arbolitos-el-llano">

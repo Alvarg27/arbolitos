@@ -58,9 +58,9 @@ const AboutSections = () => {
   }, [offsetY]);
 
   return (
-    <div ref={about} className="flex w-full py-20 px-8">
+    <div ref={about} className="flex w-full py-20 px-4">
       <div className="bg-neutral-900 max-w-[1200px] m-auto rounded-lg">
-        <div className="flex flex-col p-8 lg:flex-row md:flex-row w-auto">
+        <div className="flex flex-col px-4 pt-4 pb-8 lg:flex-row md:flex-row w-auto">
           <div className="lg:w-1/2 md:w-1/2 ">
             <div className="w-full max-w-[800px] h-[300px] lg:h-[400px] m-auto bg-gray-200 relative rounded-lg overflow-hidden">
               <Transition

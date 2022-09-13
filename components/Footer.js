@@ -9,20 +9,8 @@ import Button from "./Button";
 const Footer = () => {
   return (
     <div className="relative bg-black">
-      <div className="flex flex-col  lg:flex-row-reverse mt-8">
-        <div className="lg:w-1/2 my-4">
-          <div className="max-w-[400px] mx-auto">
-            <Image
-              src={image}
-              layout="responsive"
-              height={3}
-              width={5}
-              objectFit="cover"
-              className=" rounded-lg"
-            />
-          </div>
-        </div>
-        <div className="text-center lg:w-1/2 flex">
+      <div className="flex flex-col  mt-8">
+        <div className="text-center mx-auto flex">
           <div className="m-auto flex flex-col">
             <div className="m-auto">
               <Image
@@ -42,14 +30,10 @@ const Footer = () => {
             <Link href="https://g.page/losarbolitosrestaurante?share">
               <a target="_blank">
                 <Button className="bg-white mx-auto mt-8 px-8 ">
-                  Como llegar
+                  ¿Cómo llegar?
                 </Button>
               </a>
             </Link>
-            <p className="text-gray-500 mx-auto max-w-[200px] text-xs text-center mt-2">
-              Carretera Tula-Refineria km 31.79, El Llano 2da Secc, 42803 Tula
-              de Allende, Hgo.
-            </p>
 
             <p className="text-md mt-4 font-serif text-white">
               Horario de apertura

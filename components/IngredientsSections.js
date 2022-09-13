@@ -25,7 +25,7 @@ const IngredientsSections = () => {
   }, [offsetY]);
 
   return (
-    <div ref={ref} className="py-20">
+    <div ref={ref} className="pt-20">
       <div className={`relative max-w-[800px] overflow-visible m-auto`}>
         <div className="px-8">
           <p className="font-serif m-auto text-center text-white text-4xl">

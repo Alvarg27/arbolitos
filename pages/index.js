@@ -4,6 +4,8 @@ import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import IngredientsSections from "../components/IngredientsSections";
+import KidsSections from "../components/KidsSection";
+import BannerSection from "../components/BannerSection";
 
 export default function Home() {
   return (
@@ -12,9 +14,8 @@ export default function Home() {
       <AboutSections />
       <IngredientsSections />
       <FeaturedProducts />
-
-      <ContactSection />
-
+      <KidsSections />
+      <BannerSection />
       <Footer />
     </div>
   );

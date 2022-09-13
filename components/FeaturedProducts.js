@@ -8,7 +8,7 @@ import sopaAzteca from "../public/sopa-azteca.webp";
 
 const FeaturedProducts = () => {
   return (
-    <div className="py-10 sticky top-0">
+    <div className="py-20">
       <div className="flex flex-col ">
         <p className="font-serif m-auto text-white text-4xl">
           Platillos destacados
