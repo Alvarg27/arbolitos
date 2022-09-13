@@ -21,10 +21,7 @@ const IngredientsSections = () => {
     if (offsetY > elementOffsetY + ref.current.clientHeight / 2) {
       setParallax(offsetY - elementOffsetY);
     }
-    setIsShowing(
-      offsetY > elementOffsetY - window.innerHeight + 100 &&
-        offsetY < elementOffsetY + ref.current.clientHeight
-    );
+    setIsShowing(offsetY > elementOffsetY - window.innerHeight + 100);
   }, [offsetY]);
 
   return (

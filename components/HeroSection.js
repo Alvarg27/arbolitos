@@ -8,12 +8,6 @@ import SpinningPlate from "./SpinningPlate";
 const HeroSection = () => {
   const { offsetY } = usePageOffset();
 
-  useEffect(() => {
-    if (offsetY > 0) {
-      console.log("hey");
-    }
-  }, [offsetY]);
-
   return (
     <div className="relative flex flex-col pt-[100px] lg:pt-0 lg:flex-row lg:max-h-screen overflow-clip">
       <div className=" my-auto px-8 drop-shadow-lg text-center lg:w-1/2">
