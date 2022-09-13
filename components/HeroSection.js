@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import image1 from "../public/ensalada.webp";
 import image2 from "../public/ajonjoli.webp";
 import usePageOffset from "../hooks/usePageOffset";
@@ -7,6 +7,12 @@ import SpinningPlate from "./SpinningPlate";
 
 const HeroSection = () => {
   const { offsetY } = usePageOffset();
+
+  useEffect(() => {
+    if (offsetY > 0) {
+      console.log("hey");
+    }
+  }, [offsetY]);
 
   return (
     <div className="relative flex flex-col pt-[100px] lg:pt-0 lg:flex-row lg:max-h-screen overflow-clip">
