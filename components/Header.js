@@ -11,8 +11,8 @@ const Header = () => {
         <Image
           src={logo}
           layout="fixed"
-          height={80}
-          width={150}
+          height={90}
+          width={200}
           objectFit="contain"
           className="my-auto"
           priority={true}

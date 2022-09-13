@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import image from "../public/restaurant.webp";
+import logo from "../public/logo-arbolitos-blanco.webp";
 
 const Footer = () => {
   return (
@@ -14,11 +15,21 @@ const Footer = () => {
               height={3}
               width={5}
               objectFit="cover"
+              className=" rounded-lg"
             />
           </div>
         </div>
         <div className="text-center lg:w-1/2 flex">
           <div className="m-auto">
+            <Image
+              src={logo}
+              layout="fixed"
+              height={90}
+              width={200}
+              objectFit="contain"
+              className="my-auto"
+              priority={true}
+            />
             <p className="text-md mt-4 font-serif text-white">
               Horario de apertura
             </p>
@@ -34,6 +45,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <p className="text-gray-500 text-center py-4">
+        Powered by <b>tectify</b>
+      </p>
     </div>
   );
 };
