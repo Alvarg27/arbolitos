@@ -5,6 +5,7 @@ import image2 from "../public/ajonjoli.webp";
 import usePageOffset from "../hooks/usePageOffset";
 import SpinningPlate from "./SpinningPlate";
 import Button from "./Button";
+import Link from "next/link";
 
 const HeroSection = () => {
   const { offsetY } = usePageOffset();
@@ -18,7 +19,11 @@ const HeroSection = () => {
         <h2 className="text-white text-medium text-6xl relative z-[0] font-serif">
           Prueba la gastronomía mexicana
         </h2>
-        <Button className="bg-white mx-auto mt-10 px-8">Contactar</Button>
+        <Link href="https://www.opentable.com.mx/r/los-arbolitos-el-llano">
+          <a target="_blank">
+            <Button className="bg-white mx-auto mt-10 px-8">Reservar</Button>
+          </a>
+        </Link>
       </div>
       <div className="my-auto relative z-[1] lg:w-1/2">
         <SpinningPlate

@@ -8,8 +8,11 @@ const Layout = ({ children }) => {
       <Head>
         <title>Los Arbolitos Restaurante</title>
         <meta charSet="utf-8" />
-        <meta name="description" content="" />
-        <link rel="icon" href="/" />
+        <meta
+          name="description"
+          content="Los arbolitos restaurante | Los mejores platillos mexicanos | Reserva ya"
+        />
+        <link rel="icon" href="/icon.webp" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
