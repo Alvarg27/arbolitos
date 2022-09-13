@@ -12,10 +12,10 @@ const KidsSections = () => {
   const { offsetY } = usePageOffset();
   const about = useRef();
 
-  const videoRef = useRef(null);
+  const kidsVideoRef = useRef(null);
 
   const pauseVideo = () => {
-    videoRef.current.pause();
+    kidsVideoRef.current.pause();
     setPlaying(false);
   };
   const handleVideoPress = () => {
@@ -27,7 +27,7 @@ const KidsSections = () => {
   };
 
   const startVideo = () => {
-    videoRef.current.play();
+    kidsVideoRef.current.play();
     setPlaying(true);
   };
 
@@ -77,7 +77,7 @@ const KidsSections = () => {
               >
                 <div
                   onClick={() => handleVideoPress()}
-                  className="absolute w-full h-full flex bg-black bg-opacity-30"
+                  className="absolute w-full h-full flex bg-black bg-opacity-30 z-20"
                 >
                   <FaPlay className="m-auto text-6xl text-white opacity-50" />
                 </div>
@@ -105,7 +105,7 @@ const KidsSections = () => {
                 playsInline
                 loop
                 muted
-                ref={videoRef}
+                ref={kidsVideoRef}
               >
                 <source src="/arbolitos-kids.mp4" />
               </video>

@@ -77,7 +77,7 @@ const AboutSections = () => {
               >
                 <div
                   onClick={() => handleVideoPress()}
-                  className="absolute w-full h-full flex bg-black bg-opacity-30"
+                  className="absolute w-full h-full flex bg-black bg-opacity-30 z-20"
                 >
                   <FaPlay className="m-auto text-6xl text-white opacity-50" />
                 </div>
