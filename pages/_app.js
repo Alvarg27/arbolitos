@@ -1,5 +1,4 @@
 import Layout from "../components/Layout";
-
 import { PageOffsetProvider } from "../context/PageOffsetProvider";
 import "../styles/globals.css";
 

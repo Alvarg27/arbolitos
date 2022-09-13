@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import logo from "../public/logo-arbolitos-blanco.webp";
+import headerLogo from "../public/logo-arbolitos-blanco.webp";
 import Link from "next/link";
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 import { Transition } from "@headlessui/react";
@@ -64,7 +64,7 @@ const Header = () => {
         }`}
       >
         <Image
-          src={logo}
+          src={headerLogo}
           layout="fixed"
           height={90}
           width={200}
