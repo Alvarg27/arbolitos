@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import logo from "../public/logo-arbolitos-blanco.webp";
 import Link from "next/link";
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
+import { Transition } from "@headlessui/react";
 
 const Header = () => {
   const [loading, setLoading] = useState(true);
@@ -27,12 +28,21 @@ const Header = () => {
         loading ? "h-screen fixed " : "h-[90px] absolute "
       }`}
     >
+      <Transition
+        show={loading}
+        enter="transition-opacity duration-1000"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="transition-opacity duration-1000"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+      >
+        <div
+          className={`w-full left-0 top-0 h-screen transition duration-1000 bg-black fixed  z-20`}
+        />
+      </Transition>
+
       <div
-        className={`w-full left-0 top-0 h-screen transition duration-1000 bg-black fixed  z-20 ${
-          loading ? "opacity-100 " : "opacity-0"
-        }`}
-      />
-      <di
         className={`top-6 z-10 p-2  flex flex-col right-4 bg-neutral-900 rounded-lg px-1 shadow-md fixed transition duration-1000 delay-300 ${
           loading ? "opacity-0 " : "opacity-100"
         }`}
@@ -47,7 +57,7 @@ const Header = () => {
             <FaFacebookSquare className="text-white text-3xl my-auto" />
           </a>
         </Link>
-      </di>
+      </div>
       <div
         className={`h-[80px] flex justify-between m-auto transition duration-1000 z-[25] ${
           loading ? "animate-pulse scale-125" : ""
