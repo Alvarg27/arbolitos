@@ -4,7 +4,7 @@ import Header from "./Header";
 
 const Layout = ({ children }) => {
   return (
-    <div className="">
+    <div className="bg-black w-full">
       <Head>
         <title>Los Arbolitos Restaurante</title>
         <meta charSet="utf-8" />

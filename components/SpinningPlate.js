@@ -5,7 +5,7 @@ import usePageOffset from "../hooks/usePageOffset";
 const SpinningPlate = ({ mainImage, background, className }) => {
   const { offsetY } = usePageOffset();
   return (
-    <di className={`${className} relative`}>
+    <div className={`${className} relative  w-screen lg:w-full  md:w-full`}>
       <div
         className="relative z-[2]"
         style={{ transform: `rotate(${offsetY / 8}deg)` }}
@@ -19,7 +19,7 @@ const SpinningPlate = ({ mainImage, background, className }) => {
         />
       </div>
       <div
-        style={{ transform: `translateY(-${offsetY / 8}px)` }}
+        style={{ transform: `translateY(-${offsetY / 6}px)` }}
         className="absolute h-full w-full top-0 left-0 z-[1]"
       >
         <Image
@@ -30,7 +30,7 @@ const SpinningPlate = ({ mainImage, background, className }) => {
           objectFit="cover"
         />
       </div>
-    </di>
+    </div>
   );
 };
 

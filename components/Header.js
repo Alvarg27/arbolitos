@@ -6,7 +6,7 @@ import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div className="px-8 bg-black flex w-full">
+    <div className="px-8 flex w-full absolute z-40">
       <div className=" h-[80px] flex justify-between m-auto">
         <Image
           src={logo}
