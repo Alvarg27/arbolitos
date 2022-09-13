@@ -6,7 +6,7 @@ const Button = ({ className, onClick, children }) => {
       onClick={() => {
         onClick ? onClick() : "";
       }}
-      className={`h-[40px] flex  ${className}`}
+      className={`h-[40px] flex  rounded-lg ${className}`}
     >
       <span className="m-auto">{children}</span>
     </button>
