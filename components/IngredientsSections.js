@@ -28,9 +28,9 @@ const IngredientsSections = () => {
   }, [offsetY]);
 
   return (
-    <div ref={ref} className="py-10 px-4">
+    <div ref={ref} className="py-10">
       <div className={`relative max-w-[800px] overflow-visible m-auto`}>
-        <div className="">
+        <div className="px-8">
           <p className="font-serif m-auto text-center text-white text-4xl">
             Los mejores ingredientes
           </p>
@@ -39,13 +39,8 @@ const IngredientsSections = () => {
             mejor experiencia en cada uno de nuestros platillos.
           </p>
         </div>
-        <div className="relative mt-10">
-          <div
-            style={{
-              transform: `translateY(-${parallax / 2}px)`,
-            }}
-            className="relative z-[2]"
-          >
+        <div className="relative ">
+          <div className="relative z-[5]">
             <Image
               style={{
                 transitionDelay: "1s",
@@ -58,7 +53,12 @@ const IngredientsSections = () => {
             />
           </div>
 
-          <div className="absolute h-full  w-full top-0 left-0 z-[1]">
+          <div
+            style={{
+              transform: `translateY(-${parallax / 10}px)`,
+            }}
+            className="absolute h-full  w-full top-0 left-0"
+          >
             <Image
               style={{
                 transitionDelay: "0.3s",
@@ -73,9 +73,9 @@ const IngredientsSections = () => {
 
           <div
             style={{
-              transform: `translateY(-${parallax / 8}px)`,
+              transform: `translateY(-${parallax / 6}px)`,
             }}
-            className="absolute h-full w-full top-0 left-0 z-[1]"
+            className="absolute h-full w-full top-0 left-0"
           >
             <Image
               style={{
