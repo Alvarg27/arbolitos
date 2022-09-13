@@ -4,7 +4,7 @@ import VideoPlayer from "./VideoPlayer";
 
 const AboutSections = () => {
   return (
-    <div className="flex w-full py-10">
+    <div className="flex w-full py-10 px-8">
       <div className="bg-white max-w-[1000px] m-auto">
         <div className="flex flex-col p-8 lg:flex-row md:flex-row w-auto">
           <div className="lg:w-1/2 md:w-1/2 ">
