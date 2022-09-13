@@ -18,7 +18,7 @@ const IngredientsSections = () => {
   }, []);
 
   useEffect(() => {
-    if (offsetY < elementOffsetY + ref.current.clientHeight / 2) {
+    if (offsetY > elementOffsetY + ref.current.clientHeight / 2) {
       setParallax(offsetY - elementOffsetY);
     }
     setIsShowing(
@@ -42,6 +42,7 @@ const IngredientsSections = () => {
         <div className="relative ">
           <div className="relative z-[5]">
             <Image
+              className="pointer-events-none"
               style={{
                 transitionDelay: "1s",
                 transform: `scale(${isShowing ? 100 : 120}%)`,
@@ -55,7 +56,7 @@ const IngredientsSections = () => {
 
           <div
             style={{
-              transform: `translateY(-${parallax / 10}px)`,
+              transform: `translateY(-${parallax / 8}px)`,
             }}
             className="absolute h-full  w-full top-0 left-0"
           >
@@ -73,7 +74,7 @@ const IngredientsSections = () => {
 
           <div
             style={{
-              transform: `translateY(-${parallax / 6}px)`,
+              transform: `translateY(-${parallax / 4}px)`,
             }}
             className="absolute h-full w-full top-0 left-0"
           >
