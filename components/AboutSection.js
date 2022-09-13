@@ -103,6 +103,7 @@ const AboutSections = () => {
                 loop
                 muted
                 ref={videoRef}
+                onLoadingComplete={() => alert("loaded")}
               >
                 <source src="/arbolitos.mp4" />
               </video>

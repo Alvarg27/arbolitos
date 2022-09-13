@@ -48,6 +48,7 @@ const IngredientsSections = () => {
               src={steak}
               layout="responsive"
               objectFit="cover"
+              priority={true}
             />
           </div>
 
@@ -66,6 +67,7 @@ const IngredientsSections = () => {
               src={salt}
               layout="responsive"
               objectFit="cover"
+              priority={true}
             />
           </div>
 
@@ -84,6 +86,7 @@ const IngredientsSections = () => {
               src={veggies}
               layout="responsive"
               objectFit="cover"
+              priority={true}
             />
           </div>
         </div>
