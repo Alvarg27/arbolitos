@@ -5,7 +5,9 @@ import usePageOffset from "../hooks/usePageOffset";
 const SpinningPlate = ({ mainImage, background, className }) => {
   const { offsetY } = usePageOffset();
   return (
-    <div className={`${className} relative  w-screen lg:w-full  md:w-full`}>
+    <div
+      className={`${className} relative  w-screen lg:w-full  md:w-full overflow-hidden`}
+    >
       <div
         className="relative z-[2]"
         style={{ transform: `rotate(${offsetY / 8}deg)` }}
