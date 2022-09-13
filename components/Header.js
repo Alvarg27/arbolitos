@@ -15,6 +15,7 @@ const Header = () => {
           width={150}
           objectFit="contain"
           className="my-auto"
+          priority={true}
         />
       </div>
     </div>

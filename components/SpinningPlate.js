@@ -16,6 +16,8 @@ const SpinningPlate = ({ mainImage, background, className }) => {
           height={1}
           width={1}
           objectFit="cover"
+          priority={true}
+        />
         />
       </div>
       <div
@@ -28,6 +30,8 @@ const SpinningPlate = ({ mainImage, background, className }) => {
           height={1}
           width={1}
           objectFit="cover"
+          priority={true}
+        />
         />
       </div>
     </div>
