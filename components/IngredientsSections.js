@@ -31,7 +31,7 @@ const IngredientsSections = () => {
           <p className="font-serif m-auto text-center text-white text-4xl">
             Los mejores ingredientes
           </p>
-          <p className="text-gray-500 text-center">
+          <p className="text-gray-500 text-center mt-4">
             Seleccionamos cuidadosament cada uno de ellos para brindarte la
             mejor experiencia en cada uno de nuestros platillos.
           </p>

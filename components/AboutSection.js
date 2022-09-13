@@ -63,6 +63,9 @@ const AboutSections = () => {
         <div className="flex flex-col px-4 pt-4 pb-8 lg:flex-row md:flex-row w-auto">
           <div className="lg:w-1/2 md:w-1/2 ">
             <div className="w-full max-w-[800px] h-[300px] lg:h-[400px] m-auto bg-gray-200 relative rounded-lg overflow-hidden">
+              <div className="absolute w-full h-full flex">
+                <Spinner />
+              </div>
               <Transition
                 show={!playing}
                 enter="transition-opacity duration-300"
@@ -98,7 +101,7 @@ const AboutSections = () => {
               <video
                 onClick={() => handleVideoPress()}
                 poster="/poster.webp"
-                className="m-auto cursor-pointer w-full h-full object-cover"
+                className="m-auto cursor-pointer w-full h-full object-cover relative"
                 playsInline
                 loop
                 muted

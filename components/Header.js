@@ -12,6 +12,15 @@ const Header = () => {
       setLoading(false);
     }, 1000);
   }, []);
+
+  useEffect(() => {
+    if (loading) {
+      document.body.style.overflow = "hidden";
+      return;
+    }
+    document.body.style.overflow = "visible";
+  }, [loading]);
+
   return (
     <div
       className={`px-8 flex w-full z-40 transition-height duration-1000  ${
