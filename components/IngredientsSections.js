@@ -18,14 +18,14 @@ const IngredientsSections = () => {
   }, []);
 
   useEffect(() => {
-    if (offsetY > elementOffsetY + ref.current.clientHeight / 2) {
+    if (offsetY > elementOffsetY) {
       setParallax(offsetY - elementOffsetY);
     }
-    setIsShowing(offsetY > elementOffsetY - window.innerHeight + 100);
+    setIsShowing(offsetY > elementOffsetY - window.innerHeight + 300);
   }, [offsetY]);
 
   return (
-    <div ref={ref} className="py-10">
+    <div ref={ref} className="py-20">
       <div className={`relative max-w-[800px] overflow-visible m-auto`}>
         <div className="px-8">
           <p className="font-serif m-auto text-center text-white text-4xl">

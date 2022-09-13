@@ -4,7 +4,7 @@ import image from "../public/restaurant.webp";
 
 const Footer = () => {
   return (
-    <div className="my-10 mx-8">
+    <div className="relative bg-black">
       <div className="flex flex-col  lg:flex-row-reverse mt-8">
         <div className="lg:w-1/2 my-4">
           <div className="max-w-[400px] mx-auto">
@@ -19,7 +19,9 @@ const Footer = () => {
         </div>
         <div className="text-center lg:w-1/2 flex">
           <div className="m-auto">
-            <p className="text-md mt-4 font-serif">Horario de apertura</p>
+            <p className="text-md mt-4 font-serif text-white">
+              Horario de apertura
+            </p>
             <p className="text-sm text-gray-500 mt-2">
               Lunes - Viernes: 8:00 a.m. - 10:00 p.m.
             </p>
