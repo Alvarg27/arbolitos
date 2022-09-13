@@ -11,6 +11,7 @@ const ProductCard = ({ label, image, description }) => {
         height={5}
         width={5}
         objectFit="cover"
+        priority={true}
       />
       <p className="text-lg font-serif mt-4 text-white">{label}</p>
       <p className="text-sm text-gray-500">{description}</p>
