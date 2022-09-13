@@ -11,7 +11,7 @@ const HeroSection = () => {
   const { offsetY } = usePageOffset();
 
   return (
-    <div className="relative flex flex-col pt-[150px] mb-20 lg:pt-0 lg:flex-row lg:max-h-screen overflow-x-hidden">
+    <div className="relative flex flex-col pt-[150px] mb-20 lg:pt-0 lg:flex-row lg:min-h-screen overflow-hidden ">
       <div
         style={{ transform: `translateY(-${offsetY}px)` }}
         className=" my-auto px-8 drop-shadow-lg text-center lg:w-1/2"
@@ -25,9 +25,9 @@ const HeroSection = () => {
           </a>
         </Link>
       </div>
-      <div className="my-auto relative z-[1] lg:w-1/2">
+      <div className="my-auto relative z-[1] lg:w-1/2 flex">
         <SpinningPlate
-          className="w-[800px]"
+          className="w-[800px] m-auto"
           mainImage={image1}
           background={image2}
         />

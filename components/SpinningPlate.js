@@ -6,7 +6,7 @@ const SpinningPlate = ({ mainImage, background, className }) => {
   const { offsetY } = usePageOffset();
   return (
     <div
-      className={`${className} relative  w-screen lg:w-full  md:w-full overflow-hidden`}
+      className={`${className} relative  w-screen lg:w-full  md:w-full max-w-[500px] `}
     >
       <div
         className="relative z-[2]"
