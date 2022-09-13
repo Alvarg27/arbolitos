@@ -11,7 +11,7 @@ const HeroSection = () => {
   const { offsetY } = usePageOffset();
 
   return (
-    <div className="relative flex flex-col pt-[150px] mb-20 lg:pt-0 lg:flex-row lg:min-h-screen overflow-hidden ">
+    <div className="relative flex flex-col pt-[150px] lg:pt-0 lg:flex-row lg:min-h-screen overflow-hidden ">
       <div
         style={{ transform: `translateY(-${offsetY}px)` }}
         className=" my-auto px-8 drop-shadow-lg text-center lg:w-1/2"

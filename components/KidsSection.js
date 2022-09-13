@@ -116,11 +116,11 @@ const KidsSections = () => {
               <p className="font-serif text-4xl mt-8 md:mt-0 lg:mt-0 text-white">
                 Nuestra área de niños
               </p>
-              <p className="text-lg mt-4 text-white">Disfruta en familia.</p>
+              <p className="text-lg mt-4 text-white">Disfruta en familia</p>
               <p className="text-md text-gray-500 mt-2">
                 Ven a Arbloitos y disfruta de nuestro carrito de juegos para
-                niños. Contamos con juegos de mesa, Ipads, Nintendo Switchs,
-                Legos , Colores y más.
+                niños. Contamos con juegos de mesa, IPads, Nintendo Switch,
+                Legos , colores y más
               </p>
             </div>
           </div>
