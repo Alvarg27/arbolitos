@@ -22,17 +22,17 @@ const FeaturedProducts = () => {
             />
             <ProductCard
               image={sopaAzteca}
-              label="Sopa azteca"
+              label="Sopa Azteca"
               description="Recomendación"
             />
             <ProductCard
               image={ceviche}
-              label="Ceviche rojo"
+              label="Ceviche Rojo"
               description="Recomendación"
             />
             <ProductCard
               image={pulpo}
-              label="Pulpo"
+              label="Pulpo a las Brasas"
               description="Recomendación"
             />
           </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
-import image1 from "../public/ensalada.webp";
+import image1 from "../public/soup.webp";
 import image2 from "../public/ajonjoli.webp";
 import usePageOffset from "../hooks/usePageOffset";
 import SpinningPlate from "./SpinningPlate";
@@ -11,7 +11,7 @@ const HeroSection = () => {
   const { offsetY } = usePageOffset();
 
   return (
-    <div className="relative flex flex-col pt-[150px] lg:pt-0 lg:flex-row lg:min-h-screen overflow-hidden ">
+    <div className="relative flex flex-col pt-[150px] lg:pt-0 lg:flex-row lg:min-h-screen overflow-hidden">
       <div
         style={{ transform: `translateY(-${offsetY}px)` }}
         className=" my-auto px-8 drop-shadow-lg text-center lg:w-1/2"

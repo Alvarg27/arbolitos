@@ -33,7 +33,8 @@ const IngredientsSections = () => {
           </p>
           <p className="text-gray-500 text-center mt-4">
             Seleccionamos cuidadosamente cada uno de nuestros ingredientes para
-            brindarte la mejor experiencia y calidad en todos nuestros platillos
+            brindarte la mejor experiencia y calidad en todos nuestros
+            platillos.
           </p>
         </div>
         <div className="relative ">

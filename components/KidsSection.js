@@ -118,9 +118,9 @@ const KidsSections = () => {
               </p>
               <p className="text-lg mt-4 text-white">Disfruta en familia</p>
               <p className="text-md text-gray-500 mt-2">
-                Ven a Arbloitos y disfruta de nuestro carrito de juegos para
-                niños. Contamos con juegos de mesa, IPads, Nintendo Switch,
-                Legos , colores y más
+                Ven a Los Arbloitos y disfruta de nuestro carrito de juegos para
+                niños. Contamos con juegos de mesa, iPads, Nintendo Switch,
+                Legos , colores y más.
               </p>
             </div>
           </div>

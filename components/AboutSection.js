@@ -116,12 +116,12 @@ const AboutSections = () => {
               <p className="font-serif text-4xl mt-8 md:mt-0 lg:mt-0 text-white">
                 Sobre nosotros
               </p>
-              <p className="text-lg mt-4 text-white">Nuestra historía</p>
+              <p className="text-lg mt-4 text-white">Nuestra historia</p>
               <p className="text-md text-gray-500 mt-2">
-                Serrano Gatronómico nace en 2001, con la apertura de la primera
-                unidad de negocio, Los Arbolitos, tras años de esfuerzo y
-                dedidación, hemos crecido y desarrollado diferentes conceptos
-                que conforman nuestro grupo gastronómico
+                Serrano Gatronómico nace en 2001 con la apertura de la primera
+                unidad de negocio: Los Arbolitos. Tras años de esfuerzo y
+                dedicación, hemos crecido y desarrollado diferentes conceptos
+                que conforman nuestro grupo gastronómico.
               </p>
             </div>
           </div>
