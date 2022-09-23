@@ -39,10 +39,10 @@ const Footer = () => {
               Horario de apertura
             </p>
             <p className="text-sm text-gray-500 mt-2">
-              Lunes - Viernes: 8:30 a.m. - 10:00 p.m.
+              Lunes - Jueves: 8:30 a.m. - 10:00 p.m.
             </p>
             <p className="text-sm text-gray-500">
-              Sabado: 8:30 a.m. - 11:00 p.m.
+              Viernes - Sabado: 8:30 a.m. - 12:00 p.m.
             </p>
             <p className="text-sm text-gray-500">
               Domingo: 8:30 a.m. - 8:00 p.m.
