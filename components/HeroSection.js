@@ -19,11 +19,20 @@ const HeroSection = () => {
         <h2 className="text-white text-medium text-4xl lg:text-6xl relative z-[0] font-serif">
           Prueba la gastronomía mexicana
         </h2>
-        <Link href="https://www.opentable.com.mx/r/los-arbolitos-el-llano">
-          <a target="_blank">
-            <Button className="bg-white mx-auto mt-10 px-8">Reservar</Button>
-          </a>
-        </Link>
+        <div className="flex mt-10 justify-center">
+          <Link href="https://www.opentable.com/r/los-arbolitos-restaurante-queretaro-juriquilla">
+            <a target="_blank">
+              <Button className="bg-white mx-auto  px-4 mr-2">
+                Reservar Querétaro
+              </Button>
+            </a>
+          </Link>
+          <Link href="https://www.opentable.com.mx/r/los-arbolitos-el-llano">
+            <a target="_blank">
+              <Button className="bg-white mx-auto px-4">Reservar Tula</Button>
+            </a>
+          </Link>
+        </div>
       </div>
       <div className="my-auto relative z-[1] lg:w-1/2 flex">
         <SpinningPlate
